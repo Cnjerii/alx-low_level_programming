@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _putchar - prints string
+ * _puts - prints string
  * @str: A pointer to an int that will be changed
  *
  * Return: void means is correct
  */
 
-void _putchar('char*str')
+void _puts( 'char *str')
 {
 	char *c;
 	int m;

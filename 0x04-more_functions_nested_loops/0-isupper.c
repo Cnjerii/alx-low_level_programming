@@ -1,20 +1,13 @@
 #include "main.h"
 /**
- * _isupper - evaluate if letter isi uppercase
- * @c: print int
- * Return: Always 0.
+ * _isupper - checks for uppercase
+ * @c: character to be checked
+ *
+ * Return: 1 c == uppercase, 0 otherwise
  */
 
 int _isupper(int c)
 {
-	if (c >= 'A' && c <= 'Z')
-	{
-		return (1);
-	}
-
-else
-{
-	return(0);
+	return (c >= 65 && c <= 90);
 }
 
-}

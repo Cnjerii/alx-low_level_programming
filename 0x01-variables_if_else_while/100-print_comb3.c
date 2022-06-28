@@ -4,31 +4,29 @@
  *
  * Return: Always 0(success/correct)
  */
+
 int main(void)
 {
-	int number_left;
-	int number_right;
+	int x, y;
 
-
-	for (number_left = 48; number_right <= 78; number_left++)
+	for (x = '0'; x <= '9'; x++)
 	{
-		for (number_right = number_left + 1; number_right <= 78; number_right++)
+		for (y = x + 1; y <= '9'; y++)
 		{
-			putchar(number_left);
-			putchar(number_right);
+			putchar(x);
+			putchar(y);
 
-			if ((number_left == 56) && (number_right == 78))
+			if (x == '8' && y == '9')
+				;
+			else
 			{
-				break;
+				putchar(',');
+				putchar(' ');
 			}
-
-			putchar(',');
-			putchar(' ');
-
 		}
 
 	}
 	putchar('\n');
-
 	return (0);
 }
+

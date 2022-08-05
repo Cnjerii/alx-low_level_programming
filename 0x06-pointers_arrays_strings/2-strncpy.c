@@ -10,7 +10,7 @@
  * Return: pointer to a concatenated string
  */
 
-char *_strncpy(char *ddest, har *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
 

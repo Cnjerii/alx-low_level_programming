@@ -10,7 +10,8 @@
  */
 int main(void)
 {
-	dlistint_t *head;int sum;
+	dlistint_t *head;
+	int sum;
 
 	head = NULL;
 	add_dnodeint_end(&head, 0);

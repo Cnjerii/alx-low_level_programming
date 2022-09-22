@@ -20,7 +20,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	while (idx != 0)
 	{
-		current = current ->next;
+		current = current->next;
 		idx--;
 		if (current == NULL)
 			return (NULL);

@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * add_dnodeint_end - add anode at the end of a linked list 
+ * add_dnodeint_end - add anode at the end of a linked list
  * @head: The character to print
  * @n: string for the new node
  *
@@ -20,16 +20,16 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		current = current->next;
 
 	new_node = malloc(sizeof(dlistint_t));
-	if (new_node == NNNNULL)
+	if (new_node == NULL)
 	{
 		free(new_node);
 		return (NULL);
 	}
-	new_node-> = n;
+	new_node->n = n;
 	new_node->next = NULL;
 	new_node->prev = current;
 
-	if(current)
+	if (current)
 		current->next = new_node;
 	else
 		*head = new_node;
